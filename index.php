@@ -3,39 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payroll Chart</title>
-    <link rel="stylesheet" href="style2.css" type="text/css">
+    <link rel="stylesheet" href="style3.css">
+    <title>Login</title>
 </head>
 
 <body>
-    <div class="sidebar" id="mySidebar">
-        <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">✘</a>
-
-    </div>
-    <div id="main">
-        <button class="openbtn" onclick="openNav()">☰ Malea Energy</button>
-        <div class="content">
-            <object data="chart_bruto_trf.php" height="1015px" width="100%">
-                Your browser does not support the object tag.
-            </object>
-
-            <object data="table.php" height="820px" width="100%">
-                Your browser does not support the object tag.
-            </object>
-
-            <object data="chart_gp_pot.php" height="1015px" width="100%">
-                Your browser does not support the object tag.
-            </object>
-            <object data="chart_lembur_tjlain.php" height="1015px" width="100%">
-                Your browser does not support the object tag.
-            </object>
-            <object data="chart_human.php" height="1015px" width="100%">
-                Your browser does not support the object tag.
-            </object>
+    <div class="box">
+        <div class="form">
+            <h2>
+                SIGN IN
+            </h2>
+            <form action="loginController.php" method="POST">
+                <div class="inputBox">
+                    <input type="text" name="username" required="required" autofocus="">
+                    <span>Username</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="password" required="required">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+            
+            
+            <input type="submit" value="Login">
+        </form>
+             <!--Menampung jika ada pesan -->
+             <?php
+             if (isset($_GET['pesan'])) { ?>
+                 <label style="color:red;">
+                     <?php echo $_GET['pesan']; ?>
+                 </label>
+             <?php }  ?>
         </div>
     </div>
-    <script type="text/javascript" src="./open_close_nav.js"></script>
 </body>
 
 </html>
