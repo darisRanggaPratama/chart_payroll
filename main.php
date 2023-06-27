@@ -14,7 +14,7 @@ if ($_SESSION['status'] != "sudah_login") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payroll Chart</title>
-    <link rel="stylesheet" href="style2.css" type="text/css">
+    <link rel="stylesheet" href="css/style2.css" type="text/css">
 </head>
 
 <body>
@@ -48,7 +48,7 @@ if ($_SESSION['status'] != "sudah_login") {
             </object>
         </div>
     </div>
-    <script type="text/javascript" src="./open_close_nav.js"></script>
+    <script type="text/javascript" src="js/open_close_nav.js"></script>
 </body>
 
 </html>

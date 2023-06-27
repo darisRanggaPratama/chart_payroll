@@ -77,7 +77,7 @@ $execute = mysqli_query($connect, $query);
 				<th style="text-align:center">TRANSFER</th>
 				<th style="text-align:center">QTY</th>
 				<th style="text-align:center">
-					<img src="icons8_delete.png" alt="edit" style="width:20px;height:20px;">
+					<img src="img/icons8_delete.png" alt="edit" style="width:20px;height:20px;">
 				</th>
 			</thead>
 			<tbody>
@@ -98,7 +98,7 @@ $execute = mysqli_query($connect, $query);
 						<td style="text-align:center"><?php echo $nmr; ?></td>
 						<td style="text-align:center">
 							<a href="update.php?id=<?php echo $nmr; ?>" class="btn btn-sm btn-primary">
-								<img src="icons8-edit.png" alt="edit" style="width:15px;height:15px;"></a>
+								<img src="img/icons8-edit.png" alt="edit" style="width:15px;height:15px;"></a>
 						</td>
 						<td style="text-align:center"><?php echo $kode; ?></td>
 						<td style="text-align:center"><?php echo $bulan; ?></td>
@@ -111,7 +111,7 @@ $execute = mysqli_query($connect, $query);
 						<td style="text-align:center"><?php echo number_format($human, 0, ",", "."); ?></td>
 						<td style="text-align:right">
 							<a href="table.php?aksi=del&id=<?php echo $nmr; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?');">
-								<img src="icons8_del.png" alt="delete" style="width:15px;height:15px;"></a>
+								<img src="img/icons8_del.png" alt="delete" style="width:15px;height:15px;"></a>
 							</a>
 						</td>
 					</tr>
