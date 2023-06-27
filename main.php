@@ -18,16 +18,15 @@ if ($_SESSION['status'] != "sudah_login") {
 </head>
 
 <body>
-    <div class="sidebar" id="mySidebar">
-        <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">✘</a>
-        <a>.:MENU:.</a>
-        <a href="logout.php">Logout</a>
+    <?php
+    include 'js/nav.php';
 
-    </div>
+    ?>
+
     <div id="main">
         <button class="openbtn" onclick="openNav()">☰ Malea Energy</button>
         <div class="content">
-        <h4>Urra! Selamat datang : <?php echo $_SESSION['nama']; ?></h4>
+            <h4>Urra! Selamat datang : <?php echo $_SESSION['nama']; ?></h4>
             <br>
             <object data="chart_bruto_trf.php" height="1015px" width="100%">
                 Your browser does not support the object tag.
