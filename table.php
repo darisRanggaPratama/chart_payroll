@@ -3,12 +3,8 @@
 // Include database connection
 include "connect.php";
 
-// Makes query: SELECT ALL
-$query = "SELECT * FROM dummy ORDER BY KODE DESC";
 
-// Run the query and set query result in $result
-// Here $database comes from "connect.php"
-$execute = mysqli_query($connect, $query);
+
 
 ?>
 <!DOCTYPE html>
@@ -42,6 +38,7 @@ $execute = mysqli_query($connect, $query);
 	<div style="width: 1000px; margin: 20px auto;">
 		<h1 style="text-align:center">Budget of Payroll</h1>
 		<?php
+
 		if (isset($_GET['aksi']) == 'del') {
 			$id = $_GET['id']; // id from url
 
@@ -82,6 +79,12 @@ $execute = mysqli_query($connect, $query);
 			</thead>
 			<tbody>
 				<?php
+				// Makes query: SELECT ALL
+				$query = "SELECT * FROM dummy ORDER BY KODE DESC";
+
+				// Run the query and set query result in $result
+				// Here $database comes from "connect.php"
+				$execute = mysqli_query($connect, $query);
 				while ($result = mysqli_fetch_array($execute)) {
 					$nmr = $result['NMR'];
 					$kode = $result['KODE'];
