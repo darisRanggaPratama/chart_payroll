@@ -29,10 +29,13 @@ if (isset($_POST['submit_data'])) {
 	// If data inserted then set success message otherwise set error message
 	// Here $database comes from "connect.php"
 	if (mysqli_query($connect, $query)) {
-		$message = "Data is updated successfully.";
+		$message = '<script>alert("Data is UPDATED successfully.")';
 	} else {
-		$message = "Sorry, Data is not updated.";
+		$message = '<script>alert("Sorry, Data is not updated.")';
 	}
+
+	echo $message;
+	echo '<script> location.reload() </script>';
 }
 
 $id = $_GET['id']; // id from url
@@ -53,10 +56,7 @@ $data = mysqli_fetch_array($result);// set the row in $data
 
 <body>
 	<div style="width: 500px; margin: 20px auto;">
-		<h1 style="text-align:center">UPDATE DATA</h1>
-
-		<!-- showing the message here-->
-		<div><?php echo $message; ?></div>
+		<h1 style="text-align:center">UPDATE DATA</h1>		
 
 		<table class="table table-bordered" width="100%" cellpadding="5" cellspacing="1" border="1">
 			<form action="" method="POST">

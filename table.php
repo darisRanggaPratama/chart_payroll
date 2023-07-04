@@ -3,9 +3,6 @@
 // Include database connection
 include "connect.php";
 
-
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -47,13 +44,12 @@ include "connect.php";
 
 			// Run the query to delete record
 			if (mysqli_query($connect, $query)) {
-				$message = "Record is deleted successfully.";
+				$message = '<script>alert("Record is DELETED successfully.")</script>';
 			} else {
-				$message = "Sorry, Record is not deleted.";
+				$message = '<script>alert("Sorry, Record is not deleted.")</script>';
 			}
 
 			echo $message;
-			echo "<br>";
 		}
 		?>
 		<a href="insert.php" class="addbtn">Add New</a>
@@ -82,7 +78,7 @@ include "connect.php";
 				// Makes query: SELECT ALL
 				$query = "SELECT * FROM dummy ORDER BY KODE DESC";
 
-				// Run the query and set query result in $result
+				// Run the query and set query result in $query
 				// Here $database comes from "connect.php"
 				$execute = mysqli_query($connect, $query);
 				while ($result = mysqli_fetch_array($execute)) {
