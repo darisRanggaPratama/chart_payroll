@@ -1,9 +1,5 @@
-<?php
-
-// Include database connection
-include "connect.php";
-
-?>
+<?php // Include database connection
+include "connect.php"; ?>
 <!DOCTYPE html>
 <html>
 
@@ -110,7 +106,7 @@ include "connect.php";
 						<td style="text-align:center"><?php echo number_format($human, 0, ",", "."); ?></td>
 						<td style="text-align:right">
 							<a href="table.php?aksi=del&id=<?php echo $nmr; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?');">
-								<img src="img/icons8_del.png" alt="delete" style="width:15px;height:15px;"></a>
+								<img src="img/icons8_del.png" alt="delete" style="width:15px;height:15px;">
 							</a>
 						</td>
 					</tr>
