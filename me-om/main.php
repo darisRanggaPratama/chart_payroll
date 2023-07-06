@@ -13,7 +13,7 @@ if ($_SESSION['status'] != "sudah_login") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payroll Chart</title>
+    <title>OM Malea Toraja</title>
     <link rel="stylesheet" href="css/style2.css" type="text/css">
 </head>
 
@@ -24,7 +24,7 @@ if ($_SESSION['status'] != "sudah_login") {
     ?>
 
     <div id="main">
-        <button class="openbtn" onclick="openNav()">☰ Malea Energy</button>
+        <button class="openbtn" onclick="openNav()">☰ Malea: OM Toraja</button>
         <div class="content">
             <h4>Urra! Selamat datang : <?php echo $_SESSION['nama']; ?></h4>
             <br>
