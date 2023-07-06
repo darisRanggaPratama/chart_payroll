@@ -7,5 +7,3 @@ Aplikasi web ini dibuat menggunakan:
 3. Bootstrap 5
 4. Chart.js
 5. Datatables.js
-
-
