@@ -26,19 +26,19 @@
                     <span>Password</span>
                     <i></i>
                 </div>
-            
-            
-            <input type="submit" value="Login">
-        </form>
-             <!--Menampung jika ada pesan -->
-             <?php
-             if (isset($_GET['pesan'])) { ?>
-                 <label style="color:red;">
-                     <?php echo $_GET['pesan']; ?>
-                 </label>
-             <?php }  ?>
+                <input type="submit" value="Login">
+            </form>
+            <!--Menampung jika ada pesan -->
+            <?php
+            if (isset($_GET['pesan'])) { ?>
+                <label style="color:red;">
+                    <?php echo $_GET['pesan']; ?>
+                </label>
+            <?php }  ?>
         </div>
     </div>
+
+
 </body>
 
 </html>
